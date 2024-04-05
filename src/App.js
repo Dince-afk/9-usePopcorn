@@ -14,6 +14,7 @@ export default function App() {
   const [query, setQuery] = useState("");
   const [watched, setWatched] = useState(function () {
     const data = localStorage.getItem("watched");
+    if (!data) return [];
     return JSON.parse(data);
   });
   const [isOpen1, setIsOpen1] = useState(true);
