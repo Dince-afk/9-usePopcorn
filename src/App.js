@@ -5,7 +5,7 @@ import StarRating from "./StarRating";
 import { useMovies, useMovie } from "./useMovies";
 
 const API_KEY = "19c5dfa";
-const BASE_URL = "http://www.omdbapi.com/?";
+const BASE_URL = "https://www.omdbapi.com/?";
 
 const average = (arr) =>
   arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
