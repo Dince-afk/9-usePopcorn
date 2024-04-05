@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const API_KEY = "19c5dfa";
-const BASE_URL = "http://www.omdbapi.com/?";
+const BASE_URL = "https://www.omdbapi.com/?";
 
 function useMovies(query) {
   const [movies, setMovies] = useState([]);
